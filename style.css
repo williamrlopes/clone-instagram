@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* width:  60%; */
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    width: 400px;
+}
+
+.instagram-phone img {
+    margin-top: 40px;
+    height: 48rem;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /*  vertical*/
+    flex-direction: column; /* inverteu os eixos dos itens comentados acima */
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between; /* vertical */
+    align-items: center; /* horizontal */
+    flex-direction: column; /* inverteu os eixos de justify-content e align-itens */
+    background-color: #fff;
+    /* width: 85%; */
+    width: 350px;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+
+}
+
+/* pegando a primeira div do container group */
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3.5rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* a imagem não excede a div */
+}
+
+.profile-photo img{
+    height: 6rem ;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color:white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160,160,160)
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; /* mesmo espaço dos lados e no meio */
+    align-items: center; /* centraliza verticalmente, porque o flex direction está como column */
+    padding: 1rem; 
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/botao_applestore.png');
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/botao_googleplay.png');
+}
+
+@media (max-width: 875px) {
+   .instagram-wrapper {
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .download{
+    width: 350px;
+    }
+
+} 
+
+@media (max-width: 450px) {
+    body{
+        background-color: white;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+
+
+}
